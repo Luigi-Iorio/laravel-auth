@@ -23,7 +23,7 @@
                 <textarea class="form-control" name="description" id="description">{{ $project->title }}</textarea>
             </div>
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Modifica</button>
+                <button type="submit" class="btn btn-warning">Modifica</button>
             </div>
         </form>
     </div>

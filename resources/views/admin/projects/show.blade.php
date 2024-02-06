@@ -1,9 +1,11 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h3>{{ $project->title }}</h3>
-    <p>{{ $project->slug }}</p>
-    <p>{{ $project->stack }}</p>
-    <p>{{ $project->description }}</p>
-    <a href="{{ route('admin.projects.edit', $project->id) }}">Modifica</a>
+    <div class="container p-5">
+        <h3>Titolo: {{ $project->title }}</h3>
+        <p>Slug: {{ $project->slug }}</p>
+        <p>Stack: {{ $project->stack }}</p>
+        <p>Descrizione: {{ $project->description }}</p>
+        <a class="btn btn-primary" href="{{ route('admin.projects.edit', $project->id) }}">Modifica</a>
+    </div>
 @endsection

@@ -20,4 +20,10 @@
             </div>
         </div>
     </div>
+    <div class="container d-flex justify-content-center mt-5">
+        <a class="btn btn-secondary" href="{{ route('admin.projects.index') }}">Visualizza
+            l'elenco
+            dei
+            progetti</a>
+    </div>
 @endsection

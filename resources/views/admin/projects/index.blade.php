@@ -8,6 +8,7 @@
                 <p>{{ $project->slug }}</p>
                 <p>{{ $project->stack }}</p>
                 <p>{{ $project->description }}</p>
+                <a href="{{ route('admin.projects.show', $project->id) }}">Dettaglio</a>
             </li>
         @endforeach
     </ul>

@@ -20,10 +20,11 @@
             </div>
         </div>
     </div>
-    <div class="container d-flex justify-content-center mt-5">
+    <div class="container d-flex justify-content-center mt-5 gap-2">
         <a class="btn btn-secondary" href="{{ route('admin.projects.index') }}">Visualizza
             l'elenco
             dei
             progetti</a>
+        <a class="btn btn-dark" href="{{ route('admin.projects.create') }}">Aggiungi un nuovo progetto</a>
     </div>
 @endsection

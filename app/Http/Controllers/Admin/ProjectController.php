@@ -43,7 +43,7 @@ class ProjectController extends Controller
 
         $newProject->save();
 
-        return redirect()->route('admin.projects.index');
+        return redirect()->route('admin.projects.index')->with('message', 'Il nuovo progetto è stato inserito correttamente');
     }
 
     /**
@@ -71,7 +71,7 @@ class ProjectController extends Controller
 
         $project->update($data);
 
-        return redirect()->route('admin.projects.index');
+        return redirect()->route('admin.projects.index')->with('message', 'Il progetto è stato modificato correttamente');
     }
 
     /**
@@ -81,6 +81,6 @@ class ProjectController extends Controller
     {
         $project->delete();
 
-        return redirect()->route('admin.projects.index');
+        return redirect()->route('admin.projects.index')->with('message', 'Il progetto è stato eliminato correttamente');
     }
 }

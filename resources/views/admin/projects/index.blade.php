@@ -2,6 +2,23 @@
 
 @section('content')
     <div class="container py-5">
+        {{-- messaggi alla cancellazione, modifica, creazione del progetto --}}
+        @if (session('message'))
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header bg-warning-subtle">
+                        <strong class="me-auto">Nuovo Messaggio</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body bg-warning">
+                        {{ session('message') }}
+                    </div>
+                </div>
+            </div>
+        @endif
+        {{-- /messaggi alla cancellazione, modifica, creazione del progetto --}}
+
+        {{-- lista progetti --}}
         <ul class="row p-0 g-3">
             @foreach ($projects as $project)
                 <li class="card col-10 col-md-6 p-0">
@@ -26,5 +43,6 @@
                 </li>
             @endforeach
         </ul>
+        {{-- /lista progetti --}}
     </div>
 @endsection

@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container py-5">
+    <div class="container create py-5">
         <h2 class="mb-5">Inserisci un nuovo Progetto</h2>
         <form action="{{ route('admin.projects.store') }}" method="POST" class="row g-3">
             @csrf

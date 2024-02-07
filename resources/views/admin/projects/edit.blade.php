@@ -1,8 +1,8 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="container py-5">
-        <h2 class="mb-5">Inserisci un nuovo Progetto</h2>
+    <div class="container edit py-5">
+        <h2 class="mb-5">Modifica Il Progetto</h2>
         <form action="{{ route('admin.projects.update', $project) }}" method="POST" class="row g-3">
             @csrf
             @method('PUT')

@@ -52,11 +52,11 @@
             </header>
             {{-- /header --}}
 
-            <div class="container vh-100">
+            <div class="container h-100">
                 <div class="row h-100">
                     {{-- sidebar --}}
                     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collaps rounded-4 mt-3">
-                        <div class="position-sticky pt-3">
+                        <div class="position-sticky py-3">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link text-white {{ Route::currentRouteName() == 'dashboard' ? 'bg-secondary' : '' }}"

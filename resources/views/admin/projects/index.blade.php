@@ -12,7 +12,16 @@
                         <p>{{ $project->slug }}</p>
                         <p>{{ $project->stack }}</p>
                         <p>{{ $project->description }}</p>
-                        <a class="btn btn-primary" href="{{ route('admin.projects.show', $project) }}">Dettaglio</a>
+                        <div class="buttons d-flex gap-2">
+                            <a class="btn btn-primary" href="{{ route('admin.projects.show', $project) }}">Dettaglio</a>
+                            <div class="delete">
+                                <form action="{{ route('admin.projects.show', $project) }}" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button role="button" class="btn btn-danger">Elimina</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </li>
             @endforeach

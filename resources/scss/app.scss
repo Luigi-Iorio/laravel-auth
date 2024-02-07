@@ -1,3 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./partials/admin.scss";
 @import "./partials/dashboard.scss";
+@import "./partials/index.scss";
+
+// body
+body {
+    background-color: #494949;
+}

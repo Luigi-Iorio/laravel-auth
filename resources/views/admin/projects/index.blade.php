@@ -12,7 +12,7 @@
                         <p>{{ $project->slug }}</p>
                         <p>{{ $project->stack }}</p>
                         <p>{{ $project->description }}</p>
-                        <a class="btn btn-primary" href="{{ route('admin.projects.show', $project->id) }}">Dettaglio</a>
+                        <a class="btn btn-primary" href="{{ route('admin.projects.show', $project) }}">Dettaglio</a>
                     </div>
                 </li>
             @endforeach

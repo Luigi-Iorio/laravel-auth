@@ -10,6 +10,6 @@ L'obiettivo di questa repo è quello di sviluppare un sistema di gestione del po
 
 -   **Gestione dei Progetti**: È stato definito un modello Project con la relativa migrazione per la creazione della tabella nel database. Inoltre, sono stati sviluppati un seeder per popolare il database con dati di esempio, un controller dedicato per gestire le operazioni CRUD sui progetti e le rotte necessarie per accedere a tali funzionalità.
 
--   **Back-office**: Per gestire le operazioni CRUD dei progetti lato amministrativo, è stato creato un resource controller Admin\ProjectController. Questo controller fornisce le funzionalità necessarie per creare, leggere ed aggiornare i progetti attraverso un'interfaccia dedicata agli amministratori.
+-   **Back-office**: Per gestire le operazioni CRUD dei progetti lato amministrativo, è stato creato un resource controller Admin\ProjectController. Questo controller fornisce le funzionalità necessarie per creare, leggere, aggiornare ed eliminare i progetti attraverso un'interfaccia dedicata agli amministratori.
 
 -   **Validazione**: È stata implementata la validazione dei dati dei progetti nelle operazioni CRUD che lo richiedono. Questo è stato realizzato utilizzando due form requests, garantendo che i dati inseriti dagli utenti siano corretti e conformi ai requisiti del sistema.

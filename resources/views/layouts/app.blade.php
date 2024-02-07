@@ -35,7 +35,8 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
+                            <a class="nav-link" href="{{ url('/') }}"><img
+                                    src="{{ Vite::asset('public/logo.png') }}" alt="logo" class="img-logo"></a>
                         </li>
                     </ul>
 
